@@ -1,0 +1,113 @@
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Listar</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Detalles</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Acerca</a></li>
+        </ul>
+
+        <div class="text-end">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Lista de libros disponibles</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        Aqui se muestra la lista de libros disponible para ver y editar</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      
+      </div>
+      
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        
+      </div>
+    </div>
+    <div class="dv-container">
+    <div class="libros-container">
+        <div  *ngFor="let book of bookData; index as i; first as isFirst" (click)="selectBook(book)">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="book.webp" class="card-img-top" alt="Libros">
+                <div class="card-body">
+                  <h5 class="card-title">{{book.title}}</h5>
+                  <p class="card-text">
+                    {{book.description}}
+                  </p>
+                
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- <div class="details">
+            <h1>Detalles</h1>
+            
+                <p>Titulo: <span class="no-bold">{{selectedBook.title || "no disponible"}}</span></p>
+                <p>Descripcion: </p><p> <span class="no-bold">{{selectedBook.description || "no disponible"}}</span></p>
+                <p>No de paginas: <span class="no-bold">{{selectedBook.pageCount || "no disponible"}}</span></p>
+                <p>Fecha publicacion: <span class="no-bold">{{selectedBook.publishDate | date: 'dd/MM/yyyy' }}</span></p>
+                <p>Extracto: </p><p><span class="no-bold">{{selectedBook.excerpt || "no disponible"}}</span></p>
+                <p>Id: <span class="no-bold">{{selectedBook.id || "no disponible"}}</span></p>
+            <div>
+                <button class="btn btn-primary m-2" (click)="add()">Agregar</button>
+                <button class="btn btn-warning m-2" (click)="edit()">Editar</button>
+                <button class="btn btn-danger m-2" (click)="del()">Eliminar</button>
+            </div>
+        </div> -->
+        <div>
+          <form [formGroup]="formGroup" (ngSubmit)="onSubmit($event)">
+            <div class="mb-3">
+              <label for="id" class="form-label">ID:</label>
+              <input type="number" id="id" formControlName="id" class="form-control" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="title" class="form-label">Title:</label>
+              <input type="text" id="title" formControlName="title" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description:</label>
+              <input type="text" id="description" formControlName="description" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="pageCount" class="form-label">Page Count:</label>
+              <input type="number" id="pageCount" formControlName="pageCount" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="excerpt" class="form-label">Excerpt:</label>
+              <input type="text" id="excerpt" formControlName="excerpt" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="publishDate" class="form-label">Publish Date:</label>
+              <input type="date" id="publishDate" formControlName="publishDate" class="form-control">
+            </div>
+            <div>
+              <button class="btn btn-primary m-2" (click)="add()">Agregar</button>
+              <button class="btn btn-warning m-2" (click)="edit()">Editar</button>
+              <button class="btn btn-danger m-2" (click)="del()">Eliminar</button>
+              <button class="btn btn-danger m-2" (click)="save()">Guardar</button>
+            </div>
+          </form>
+          
+        </div>
+        
+    </div>
+        <div class="center">
+    <nav aria-label="Page navigation" class="mx-auto">
+        <ul class="pagination d-flex align-items-center">
+          <li class="page-item"><a class="page-link btn btn-primary" (click)="before()">Anterior</a></li>
+          <li class="page-item"><a class="page-link btn btn-primary" (click)="next()">Siguiente</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+

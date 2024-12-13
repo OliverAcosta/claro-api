@@ -1,0 +1,36 @@
+.libros-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 8px;
+}
+
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.dv-container
+{
+    display: grid;
+    grid-template-columns: auto 12%;
+}
+
+.details
+{
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details p{
+    font-weight: bold;;
+}
+
+.no-bold{
+ font-weight: normal;
+}
