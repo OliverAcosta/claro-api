@@ -13,6 +13,7 @@ namespace Services
         { 
             this.http = http;
             this.url = configuration.GetSection("urlService").Value;
+            if (url == null) throw new KeyNotFoundException("urlService is not found in appsettings");
         }
 
         public ContentData<Books> AddBooks(Books obj)
