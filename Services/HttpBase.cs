@@ -17,8 +17,6 @@ namespace Services
         {
             this.http = new HttpClient();
         }
-
-
         public async Task<ContentData<TData>> Get<TData>(string url) where TData : class, new()
         {
             var request = await this.http.GetAsync(url);
@@ -71,7 +69,7 @@ namespace Services
             var request = await this.http.DeleteAsync(url);
             var contentout = new ContentData<TData>();
             contentout.StatusCode = request.StatusCode;
-            if (request.IsSuccessStatusCode)
+            if (request.IsSuccessStatusCode && !string.IsNullOrEmpty(await request.Content.ReadAsStringAsync()))
             {
                 contentout.Data = await request.Content.ReadFromJsonAsync<TData>();
             }

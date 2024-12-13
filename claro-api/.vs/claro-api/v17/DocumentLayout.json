@@ -3,11 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\claro-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7514656F-1F46-44DD-BD14-7BAAD2AB524A}|claro-api.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\claro-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7514656F-1F46-44DD-BD14-7BAAD2AB524A}|claro-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{31D1DDF8-610F-48A2-ABE9-AA9369078A28}|..\\Services\\Services.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\services\\httpbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31D1DDF8-610F-48A2-ABE9-AA9369078A28}|..\\Services\\Services.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7514656F-1F46-44DD-BD14-7BAAD2AB524A}|claro-api.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\claro-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7514656F-1F46-44DD-BD14-7BAAD2AB524A}|claro-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7514656F-1F46-44DD-BD14-7BAAD2AB524A}|claro-api.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\claro-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,9 +18,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{31D1DDF8-610F-48A2-ABE9-AA9369078A28}|..\\Services\\Services.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31D1DDF8-610F-48A2-ABE9-AA9369078A28}|..\\Services\\Services.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\services\\httpbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EADA2A3-B6C1-4A08-B5DE-E7DB63819035}|..\\Models\\Models.csproj|c:\\users\\rey-oliver\\desktop\\claro-api\\models\\contentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -40,11 +40,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\claro-api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -63,7 +63,7 @@
               "RelativeDocumentMoniker": "..\\Services\\BooksService.cs",
               "ToolTip": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\Services\\BooksService.cs",
               "RelativeToolTip": "..\\Services\\BooksService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwCYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwB0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T00:23:09.512Z",
               "EditorCaption": ""
@@ -78,25 +78,23 @@
               "RelativeToolTip": "..\\Models\\ContentData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T23:52:47.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T23:52:47.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Services",
+              "DocumentIndex": 4,
+              "Title": "Services.csproj",
               "DocumentMoniker": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\Services\\Services.csproj",
               "RelativeDocumentMoniker": "..\\Services\\Services.csproj",
               "ToolTip": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\Services\\Services.csproj",
               "RelativeToolTip": "..\\Services\\Services.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-12T23:23:40.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T23:23:40.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\claro-api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -104,18 +102,17 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T23:03:17.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T23:03:17.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "HttpBase.cs",
               "DocumentMoniker": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\Services\\HttpBase.cs",
               "RelativeDocumentMoniker": "..\\Services\\HttpBase.cs",
               "ToolTip": "C:\\Users\\rey-oliver\\Desktop\\claro-api\\Services\\HttpBase.cs",
               "RelativeToolTip": "..\\Services\\HttpBase.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAADwv0QAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T22:02:10.963Z",
               "EditorCaption": ""
@@ -130,8 +127,7 @@
               "RelativeToolTip": "..\\Models\\Models.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-12T21:53:42.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T21:53:42.347Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "..\\Models\\Books.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T21:46:38.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T21:46:38.28Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "claro-api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-12T21:51:45.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T21:51:45.637Z"
             }
           ]
         }
